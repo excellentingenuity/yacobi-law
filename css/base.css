@@ -33,7 +33,7 @@ body {
 	
 	text-align:center;
 	border-bottom:thin solid #333;
-	padding-bottom:0px;
+	padding-bottom:1px;
 	margin-bottom:0px;
 }
 #top_nav{
@@ -124,11 +124,13 @@ p.info {
 	font-family:'Tienne', serif;
 }
 p.tags {
+	
 	padding:5px;
 	font-size:2em;
 	font-family:'Tienne', serif;	
 }
 ul.tags_list {
+	padding-right:8px;
 	list-style-type:none;
 	text-align:start;	
 	font-size:1.3em;
@@ -163,15 +165,24 @@ ul.tags_list {
 }
 #right_thumb {
 	width:15%;
-	height:70%;	
+	height:140px;	
 	max-height:160px;
 	margin-left:5px;
 	border-color:#9B9D9C;
+}
+#right_thumb_horizontal {
+	width:240px;	
+	margin-left:5px;
+	border-color:#9B9D9C;
+	max-height:160px;
+	
+	
 }
 #left_thumb_horizontal {
 	width:240px;	
 	margin-right:5px;
 	border-color:#9B9D9C;
+	
 }
 #content_headings {
 	color:#FFFFFF;
