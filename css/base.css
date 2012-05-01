@@ -2,13 +2,23 @@
 /* CSS Document */
 
 @import url(http://fonts.googleapis.com/css?family=Tienne:700);
-
 body {
 	font-family:'Tienne', serif;
 	background-image:url(../img/back4.jpg);
 	background-repeat:repeat-x;
+	height:100%;
 	
 }
+#page {
+	min-height:750px;
+	height:100%;
+	
+}
+.footer_bottom {
+	clear:both;
+	background-color:#3F9041;
+}
+
 
 .header_logo {
 	padding-bottom:2px;
@@ -16,17 +26,19 @@ body {
 	border-bottom-right-radius:5px;
 }
 .banner_logo {
+	height:100px;
 	max-height:190px;
 	width:100%;
 }
 .tag_line {
-	font-size:3em;
+	font-size:2.5em;
 	font-family:'Tienne', serif;
 	font-stretch:expanded;
 	text-align:left;
 	color:#3F9041;	
-	padding-top:10%;
+	padding-top:4%;
 	line-height:1em;
+	height:100px;
 	
 }
 #nav_menu {
@@ -67,9 +79,9 @@ body {
 	border-top-right-radius:10px;
 	border-top-left-radius:10px;
 	border-bottom-left-radius:10px;
-	height:60%;
+	height:300px;
 	width:100%;
-	max-height:300px;
+	
 	
 }
 .slides {
@@ -184,6 +196,21 @@ ul.tags_list {
 	border-color:#9B9D9C;
 	
 }
+#left_large_horizontal {
+	width:340px;
+	height:340px;	
+	margin-right:5px;
+	margin-left:10px;
+	border-color:#9B9D9C;
+	
+}
+#right_large_horizontal {
+	width:340px;	
+	margin-left:5px;
+	margin-right:10px;
+	border-color:#9B9D9C;
+	height:340px;
+}
 #content_headings {
 	color:#FFFFFF;
 	background-color:#3F9041;
@@ -192,6 +219,16 @@ ul.tags_list {
 	font-family:'Tienne', serif;
 	font-size:1.2em;
 	
+}
+#static_content_header {
+	color:#FFFFFF;
+	background-color:#3F9041;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;	
+	font-family:'Tienne', serif;
+	font-size:1.2em;
+	text-align:center;
+	margin-bottom:10px;
 }
 
 .footer {
@@ -203,4 +240,14 @@ ul.tags_list {
 	padding-bottom:15px;
 	font-size:10px;
 }
-
+#static_content_contact {
+	margin-top:15px;
+}
+.static_main_content {
+	margin-top:15px;
+		
+}
+#static_content {
+	padding:10px;
+	paddin-top:0px;	
+}

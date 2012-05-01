@@ -65,7 +65,7 @@ body {
 	border-top-right-radius:10px;
 	border-top-left-radius:10px;
 	border-bottom-left-radius:10px;
-	height:150px;
+	height:100%;
 	width:100%;
 	max-height:200px;
 	max-width:400px;
@@ -162,15 +162,24 @@ ul.tags_list {
 }
 #right_thumb {
 	width:15%;
-	height:70%;	
-	max-height:160px;
+	height:80px;	
+	max-height:100px;
 	margin-left:5px;
 	border-color:#9B9D9C;
 }
+#right_thumb_horizontal {
+	width:120px;	
+	margin-left:5px;
+	border-color:#9B9D9C;
+	max-height:160px;
+	
+	
+}
 #left_thumb_horizontal {
-	width:240px;	
+	width:120px;	
 	margin-right:5px;
 	border-color:#9B9D9C;
+	
 }
 #content_headings {
 	color:#FFFFFF;

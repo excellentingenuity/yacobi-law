@@ -6,7 +6,7 @@
 
 
 <meta charset="utf-8">
-<title>Yacobi Adoption Law</title>
+<title>About Us - Yacobi Adoption Law</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" >
@@ -14,6 +14,7 @@
 <link id="basecss" href="css/base.css" rel="stylesheet">
 <link href="css/about.css" rel="stylesheet">
 
+<link rel="icon" href="img/favicon.ico">
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -34,8 +35,12 @@
   <script src="assets/js/bootstrap-carousel.js"></script>
   <script src="assets/js/bootstrap-typeahead.js"></script>
   <script src="assets/js/detect.js"></script>
-  
 
+<!--[if (gte IE 6)&(lte IE 8)]>
+  <script type="text/javascript" src="assets/js/selectivizr.js"></script>
+  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+<![endif]--> 
+  
 
 <!-- insert google analytics code here-->
 
@@ -44,14 +49,14 @@
 </head>
 <body>
 
-<div class="container-fluid">
+<div class="container-fluid" id="page">
 	<div class="row-fluid">
-    	<div class="span8">
+    	<div class="span6">
         	<div class="header_logo">
             	<a href="http://www.scadoptlaw.com"><img class="banner_logo" src="img/logo6a.png" alt="Yacobi Law Firm Growing Families One Adoption at a time."></a>
             </div>
         </div>
-        <div class="span4">
+        <div class="span5 offset1">
         	<div class="tag_line">
             	<strong>Growing Families One Adoption at a Time.</strong>
             </div>
@@ -62,10 +67,13 @@
         	<div class="nav" id="nav_menu">
                 <ul class="nav nav-pills" id="top_nav">
                 	<li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>Home</a></li>
-                    <li><a id="button_navs" href="FAQ.html">FAQ</a></li>
+                    <li><a id="button_navs" href="birth.html">Birth Parents</a></li>
+                    <li><a id="button_navs" href="adoptive.html">Adoptive Parents</a></li>
+                    <li><a id="button_navs" href="portfolios.html">Family Portfolios</a></li>
                     <li><a id="button_navs" href="Laws.html">Adoption Laws</a></li>
-                    <li  class="active"><a id="button_navs_active" href="#">About Us</a></li>
-                    <li><a id="button_navs" href="Contact_us.html">Contact Us</a></li>
+                    <li><a id="button_navs" href="FAQ.html">FAQ</a></li>
+                    <li class="active"><a id="button_navs_active" href="about.html">About Us</a></li>
+                    <li><a id="button_navs" href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
         </div>
@@ -102,7 +110,7 @@ $(".collapse").collapse();
                         	<div class="accordion-inner"  id="main_content_white">
                             	<img class="thumbnail pull-left" id="left_thumb_horizontal" src="img/family_mix.jpg" />
                             	<p class="para">We are a general practice firm in Greenville, S.C., with a passion for Adoption and Family Law. We handle domestic, foreign, interstate and step-parent adoptions. We coordinate independent adoptions as well as agency adoptions, and we have experience in adoptions involving Assisted Reproductive Technology.</p><br />
-                                 <p class="para">With our deep experience and broad contacts, we can coordinate comprehensive services from outside agencies and professionals, helping to ensure the best possible outcome for all parties.</p>
+			<p class="para">With our deep experience and broad contacts, we can coordinate comprehensive services from outside agencies and professionals, helping to ensure the best possible outcome for all parties.</p>
                             </div>
                          </div>
                 	</div>
@@ -117,7 +125,7 @@ $(".collapse").collapse();
                             	<img class="thumbnail pull-right" id="right_thumb_horizontal" src="img/family_celebrate.jpg" />
                             	<p class="para">We believe the adoption process is something to be celebrated – not merely tolerated. We believe that every mother deserves respect and every child deserves a loving family. We believe in finding solutions and providing fresh starts.</p>
                                  <p class="para">We believe that what we’re doing makes a difference.</p>
-                                 <p class="para">Whatever your circumstances, we look forward to making a difference for <em>you</em>.</p>
+                                 <p class="para">Whatever your circumstances, we look forward to making a difference for <em>you</em>.</p><br />
                             </div>
                          </div>
                 	</div>
@@ -126,12 +134,10 @@ $(".collapse").collapse();
         </div>
       </div>
     </div>
-    <div class="row>
-    	<div class="span12" id="spacer_4em"></div>
-        <div class="span12" id="spacer_4em"></div>
-        <div class="span12" id="spacer_4em"></div>
-    </div>
-    <div class="row-fluid">
+</div>
+<footer class="footer_bottom">
+	<div class="container-fluid" id="footer">
+    	<div class="row-fluid">
     	<d1v class="span12" id="footer"> 
         	<!-- Footer area -->
             <div class="footer">
@@ -141,8 +147,8 @@ $(".collapse").collapse();
             </div>
         </d1v>
     </div>
-</div>
-
+    </div>
+</footer>
 
 </body>
 </html>

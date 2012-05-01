@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main_content {
+	padding-top:5px;
+}
+#spacer_4em {
+	height:4em;
+}
+.download_block {
+	text-align:center;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	margin-top:5px;
+	margin-left:10px;
+	background-color:#D8D8D8;
+	padding-bottom:5px;
+}
+.download_heading {
+	color:#FFFFFF;
+	background-color:#3F9041;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	width:100%;	
+}
+#download_btn {
+	color:#FFFFFF;
+	background-image:none;
+	background-color:#3F9041 !important;
+	padding-top:5px;
+}
+ul.laws_lists {
+	padding-right:8px;
+	list-style-type:none;
+	text-align:start;	
+	font-size:1.25em;
+	font-family:'Tienne', serif;
+	text-wrap:normal;
+	text-justify:distribute;
+}
+li {
+padding-bottom:1em;
+}

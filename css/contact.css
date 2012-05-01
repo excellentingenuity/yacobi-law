@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main_content {
+	padding-top:5px;
+}
+#spacer_4em {
+	height:4em;
+}
+label.valid {
+  width: 24px;
+  height: 24px;
+  background: url(img/valid.png) center center no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+}
+label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+#form_button_group {
+	background-color:#D8D8D8;
+	padding-bottom:0px;
+	padding-top:3px;
+}
+#confirmation {
+		
+}
+.my_contact {
+	background-color:#D8D8D8;
+	border-radius:5px;	
+	padding:8px;
+	padding-left:10%;
+	padding-bottom:3px;
+}
+#contact_small {
+	color:#9B9D9C;	
+}
+#form_submit {
+	color:#FFFFFF;
+	background-image:none;
+	background-color:#3F9041 !important;	
+}
+#form_cancel {
+	color:#FFFFFF;
+	background-image:none;
+	background-color:#3F9041 !important;	
+}
+#confirmation_close {
+	color:#FFFFFF;
+	background-image:none;
+	background-color:#3F9041 !important;
+}
+#map {
+	margin-top:3%;
+		
+}
+#map_thumb {
+	height:500px;
+	width:500px;	
+}
+.contact_block {
+	margin-top:10%;
+}
