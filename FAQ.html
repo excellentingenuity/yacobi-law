@@ -11,8 +11,11 @@
 
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" >
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<link id="basecss" href="css/base.css" rel="stylesheet">
-<link href="css/faq.css" rel="stylesheet">
+<link rel="stylesheet" media="screen" href="css/phone.css">
+<link rel="stylesheet" media="screen and (min-width: 330px) and (max-width: 590px)" href="css/phone-hz.css"> 
+<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 800px)" href="css/tablet.css">
+<link rel="stylesheet" media="screen and (min-width: 801px) and (max-width: 1280px)" href="css/desktop.css">
+<link rel="stylesheet" media="screen and (min-width: 1280px)" href="css/widescreen.css">
 
 <link rel="icon" href="img/favicon.ico">
 <!--[if lt IE 9]>
@@ -23,48 +26,41 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/bootstrap-transition.js"></script>
-  <script src="assets/js/bootstrap-alert.js"></script>
-  <script src="assets/js/bootstrap-modal.js"></script>
   <script src="assets/js/bootstrap-dropdown.js"></script>
-  <script src="assets/js/bootstrap-scrollspy.js"></script>
   <script src="assets/js/bootstrap-tab.js"></script>
-  <script src="assets/js/bootstrap-tooltip.js"></script>
-  <script src="assets/js/bootstrap-popover.js"></script>
   <script src="assets/js/bootstrap-button.js"></script>
   <script src="assets/js/bootstrap-collapse.js"></script>
-  <script src="assets/js/bootstrap-carousel.js"></script>
   <script src="assets/js/bootstrap-typeahead.js"></script>
-  <script src="assets/js/detect.js"></script>
-
-<!--[if (gte IE 6)&(lte IE 8)]>
-  <script type="text/javascript" src="assets/js/selectivizr.js"></script>
-  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
-<![endif]--> 
+ 
   
 
 <!-- insert google analytics code here-->
 
-
+<style>
+body {
+	background-image:url(img/back4_longa.jpg);
+}
+</style>
 
 </head>
 <body>
 
 <div class="container-fluid" id="page">
 	<div class="row-fluid">
-    	<div class="span6">
+    	<div class="span4">
         	<div class="header_logo">
-            	<a href="http://www.scadoptlaw.com"><img class="banner_logo" src="img/logo6a.png" alt="Yacobi Law Firm Growing Families One Adoption at a time."></a>
+            	<a href="http://www.scadoptlaw.com"><img class="banner_logo" src="img/logo6a.png" alt="Yacobi Law Firm Grow-fluiding Families One Adoption at a time."></a>
             </div>
         </div>
-        <div class="span5 offset1">
+        <div class="span5 offset2">
         	<div class="tag_line">
             	<strong>Growing Families One Adoption at a Time.</strong>
             </div>
         </div>
     </div>
-    <div class="row">
-    	<div class="span10 offset2">
-        	<div class="nav" id="nav_menu">
+    <div class="row-fluid">
+    	<div class="span12">
+        	<div class="nav visible-desktop" id="nav_menu">
                 <ul class="nav nav-pills" id="top_nav">
                 	<li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>Home</a></li>
                     <li><a id="button_navs" href="birth.html">Birth Parents</a></li>
@@ -76,76 +72,715 @@
                     <li><a id="button_navs" href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
+            <div class="nav visible-tablet" id="nav_menu">
+                <ul class="nav nav-pills nav-stacked" id="top_nav">
+                	<li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>Home</a></li>
+                    <li><a id="button_navs" href="birth.html">Birth Parents</a></li>
+                    <li><a id="button_navs" href="adoptive.html">Adoptive Parents</a></li>
+                    <li><a id="button_navs" href="portfolios.html">Family Portfolios</a></li>
+                    <li><a id="button_navs" href="Laws.html">Adoption Laws</a></li>
+                    <li class="active"><a id="button_navs_active" href="FAQ.html">FAQ</a></li>
+                    <li><a id="button_navs" href="about.html">About Us</a></li>
+                    <li><a id="button_navs" href="contact.php">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav visible-phone" id="nav_menu">
+                <ul class="nav nav-pills nav-stacked" id="top_nav">
+                	<li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>Home</a></li>
+                    <li><a id="button_navs" href="birth.html">Birth Parents</a></li>
+                    <li><a id="button_navs" href="adoptive.html">Adoptive Parents</a></li>
+                    <li><a id="button_navs" href="portfolios.html">Family Portfolios</a></li>
+                    <li><a id="button_navs" href="Laws.html">Adoption Laws</a></li>
+                    <li class="active"><a id="button_navs_active" href="FAQ.html">FAQ</a></li>
+                    <li><a id="button_navs" href="about.html">About Us</a></li>
+                    <li><a id="button_navs" href="contact.php">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </div> 
 <script type="text/javascript">
 $(".collapse").collapse();
 
 </script>
-     <div class="row">
-    	<div class="span8 offset2">
-        	<div class="main_content">
+     <div class="row-fluid">
+    	<div class="span8">
+        	<div class="main_content" id="faq_content">
             	<!-- main content area -->
-                <div class="accordion" id="content_accordian">
-                	<div class="accordion-group">
-                    	<div class="accordion-heading" id="content_headings">
-                        	<a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapseOne">
-                            	Who We Are
-                            </a>
-                        </div>
-                       	<div id="collapseOne" class="accordion-body in" style="height: auto;">
-                        	<div class="accordion-inner" id="main_content_white">
-                            <img class="thumbnail pull-right" id="right_thumb_horizontal" src="img/small_baby.jpg" />
-                            <p class="para">For three decades, Stephen Yacobi has dedicated himself to creating happier families through the practice of law. Since graduating with honors from Wofford College and the University of South Carolina School of Law, he has helped place hundreds of children in stable, loving homes. He has been a member of the South Carolina Bar since 1980 and a Fellow of the American Academy of Adoption Attorneys since 1993.</p><br /><br />
-                            </div>
-                         </div>
-                	</div>
-                    <div class="accordion-group">
-                    	<div class="accordion-heading" id="content_headings">
-                        	<a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapseTwo">
-                            	What We Do
-                            </a>
-                        </div>
-                       	<div id="collapseTwo" class="accordion-body collapse" style="height:0px;">
-                        	<div class="accordion-inner"  id="main_content_white">
-                            	<img class="thumbnail pull-left" id="left_thumb_horizontal" src="img/family_mix.jpg" />
-                            	<p class="para">We are a general practice firm in Greenville, S.C., with a passion for Adoption and Family Law. We handle domestic, foreign, interstate and step-parent adoptions. We coordinate independent adoptions as well as agency adoptions, and we have experience in adoptions involving Assisted Reproductive Technology.</p><br />
-			<p class="para">With our deep experience and broad contacts, we can coordinate comprehensive services from outside agencies and professionals, helping to ensure the best possible outcome for all parties.</p>
-                            </div>
-                         </div>
-                	</div>
-                    <div class="accordion-group">
-                    	<div class="accordion-heading" id="content_headings">
-                        	<a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapseThree">
-                            	What We Believe
-                            </a>
-                        </div>
-                       	<div id="collapseThree" class="accordion-body collapse" style="height:0px;">
-                        	<div class="accordion-inner"  id="main_content_white">
-                            	<img class="thumbnail pull-right" id="right_thumb_horizontal" src="img/family_celebrate.jpg" />
-                            	<p class="para">We believe the adoption process is something to be celebrated – not merely tolerated. We believe that every mother deserves respect and every child deserves a loving family. We believe in finding solutions and providing fresh starts.</p>
-                                 <p class="para">We believe that what we’re doing makes a difference.</p>
-                                 <p class="para">Whatever your circumstances, we look forward to making a difference for <em>you</em>.</p><br />
-                            </div>
-                         </div>
-                	</div>
+                <div class="tabbable" id="faq_tabs">
+                	<ul class="nav nav-tabs" id="faq_tabs_ul">
+                    	<li class="active" id="faq_tabs_li">
+                        	<a id="faq_tabs_a" href="#birth_mother" data-toggle="tab">Birth Mothers</a>
+                        </li>                    	
+                        <li id="faq_tabs_li">
+                        	<a id="faq_tabs_a" href="#birth_father" data-toggle="tab">Birth Fathers</a>
+                        </li>                    	
+                        <li id="faq_tabs_li">
+                        	<a id="faq_tabs_a" href="#adoptive" data-toggle="tab">Adoptive Parents</a>
+                        </li>                    	
+                        <li id="faq_tabs_li">
+                        	<a id="faq_tabs_a" href="#other" data-toggle="tab">Other Adoption Questions</a>
+                        </li>
+                	</ul>
+                </div>
+                <div class="tab-content" id="faq_box">
+                	<div class="tab-pane active" id="birth_mother">
+                      <div class="accordion" id="content_accordian">
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse1a">
+                                      1. When can the mother of the baby start the adoption process?
+                                  </a>
+                              </div>
+                              <div id="collapse1a" class="accordion-body in" style="height: auto;">
+                                  <div class="accordion-inner" id="main_content_whitea">
+                                  
+                                  <p class="para">Answer: As soon as she knows that she is pregnant.</p><br /><br />
+                                  </div>
+                               </div>
+                          </div>
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse2a">
+                                      2. Can the birth mother choose the adoptive parents?
+                                  </a>
+                              </div>
+                              <div id="collapse2a" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: Yes</p><br />
+                                  </div>
+                               </div>
+                          </div>
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse4a">
+                                      4. What expenses can the adoptive parents pay to or on behalf of the birth mother and child?
+                                  </a>
+                              </div>
+                              <div id="collapse4a" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      	<ol id="numbered_list">
+                                        	<li>Reimbursement for necessary, actual medical and reasonable living expenses;</li>
+                                            <li>fees for obtaining certain investigations and reports required by statute;</li>
+                                            <li>fees of individuals required to take consents;</li>
+                                            <li>fees of the <em>guardian ad litem;</em></li>
+                                            <li>reasonable attorney fees and costs for services actually provided;</li>
+                                            <li>reasonable fees to child-placing agencies;</li>
+                                            <li>reasonable fees to sending agencies as defined in the Interstate Compact for the Placement of Children.<br />
+                                           There are no differences between allowable expenses in an agency and independent adoption. </li>
+                                        </ol>
+                                      
+                                      </p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse5a">
+                                      5. Can a minor mother independently sign legal documents placing the child for adoption (consent to the adoption)?
+                                  </a>
+                              </div>
+                              <div id="collapse5a" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: Yes</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse6a">
+                                      6. When does the birth mother actually sign the legal documents required for the adoption?
+                                  </a>
+                              </div>
+                              <div id="collapse6a" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      Typically, the birth mother signs the day after the delivery or thereafter.  Her medical chart should be checked to make sure she is not under the influence of any pain killer that might impair her judgment. </p>
+                                      <p class="para">
+The consent and relinquishment must be explained by an attorney or person certified by the Department of Social Services who does not represent the adoptive couple.  The document must be notarized.
+</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse7a">
+                                      7. Can the birth mother change her mind before signing the legal consents to the adoption?
+                                  </a>
+                              </div>
+                              <div id="collapse7a" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: Yes</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse8a">
+                                      8. Can the birth mother change her mind after signing the legal consents to the adoption?
+                                  </a>
+                              </div>
+                              <div id="collapse8a" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      She can only withdraw her consent with the Court’s permission.  She would have to prove coercion or duress and that it would be in the best interest of the child for the Court to allow the consent to be withdrawn.  The Court is to consider the totality of the circumstances including emotional stressors in determining whether or not the signing of any consent to adoption was involuntary or pursuant to duress or coercion. See McCann v. Doe, Opinion #26468, filed April 7, 2008. The burden is on the person seeking to revoke the consent to show the consent was obtained involuntarily. Phillips v. Baker, 284 SC 134, 137, 325 SE2d 533, 535 (1985). See S. C. Code Ann. §63-9-350 (Cum. Supp. 1992).<br />
+                                          <ol id="numbered_list">
+                                        	<li>Reimbursement for necessary, actual medical and reasonable living expenses;</li>
+                                            <li>fees for obtaining certain investigations and reports required by statute;</li>
+                                            <li>fees of individuals required to take consents;</li>
+                                            <li>fees of the <em>guardian ad litem;</em></li>
+                                            <li>reasonable attorney fees and costs for services actually provided;</li>
+                                            <li>reasonable fees to child-placing agencies;</li>
+                                            <li>reasonable fees to sending agencies as defined in the Interstate Compact for the Placement of Children.<br />
+                                           There are no differences between allowable expenses in an agency and independent adoption. </li>
+                                        </ol>
+                                    </p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse9a">
+                                      9. Can the birth mother communicate with the adoptive parents and child after the adoption?
+                                  </a>
+                              </div>
+                              <div id="collapse9a" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: If allowed by the adoptive parents.</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse10a">
+                                      10. Can a birth mother anonymously surrender a newborn child?
+                                  </a>
+                              </div>
+                              <div id="collapse10a" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: Yes, See S. C. Code Ann. §63-7-40 (Cum. Supp. 1992).</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse11a">
+                                      11. What happens if the birth parents do not agree that adoption should be the plan?
+                                  </a>
+                              </div>
+                              <div id="collapse11a" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      If the birth father is married to the birth mother he may essentially veto any adoption plan. If the birth father was not married to the birth mother and the child is placed before it is six months old and the birth father lived with the birth mother a continuous period of six months immediately preceding the placement and held himself out to be the father during the six month period or paid a fair and reasonable sum, based on his ability, for the support of the child or expenses incurred in connection with the pregnancy or with the birth of the child then his consent will be required and he may essentially veto the adoption plan.  If the birth father was not married to the birth mother and the child is more than six months old at placement, the birth father’s consent is necessary but only if he has maintained substantial and continuous contact or repeated contact with the child as demonstrated by payment of support of a fair and reasonable sum based on his financial ability and visits at least monthly when he is able to do so and not prevented from doing so by the person or agency having lawful custody of the child or regular communication by the father with the child or with the person or agency having custody of the child when the father is financially or physically unable to visit the child or when the father is prevented from visiting the child by the person or agency having lawful custody of the child.  See S. C. Code Ann. § 63-9-310 (Cum. Supp. 1992).</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse12a">
+                                      12. Will the birth mother be asked to file an affidavit in her adoption papers regarding future contact or the release of identifying information to the adoptee or adoptive parents?
+                                  </a>
+                              </div>
+                              <div id="collapse12a" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: No</p><br />
+                                  </div>
+                               </div>
+                          </div>
+                       </div>
+                   </div>
+                   <div class="tab-pane" id="birth_father">
+                      <div class="accordion" id="content_accordian">
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse1b">
+                                      1. Does the father of the baby have to be notified of the birth and the mother’s adoption plan?
+                                  </a>
+                              </div>
+                              <div id="collapse1b" class="accordion-body in" style="height: auto;">
+                                  <div class="accordion-inner" id="main_content_whitea">
+                                 
+                                  <p class="para">Answer: <br />
+                                  Section 63-9-730 identifies persons entitled to notice of adoption proceedings. It indicates the following would be entitled to notice:<br />
+                                  <ol id="numbered_list">
+                                        	<li>A father who has been adjudicated to be the father of the child,</li>
+                                            <li>A father whose consent is required pursuant to Section 63-9-310 and has not                             relinquished his rights,</li>
+                                            <li>A father who is registered with Responsible Father Registry,</li>
+                                            <li>A father who is recorded on the child’s birth certificate,</li>
+                                            <li>A father who has openly lived with the child or the child’s mother at the time preceding are initiated and is holding himself out to be the father of this child,</li>
+                                            <li>A father who has been identified as the child’s father by the mother in a sworn statement,</li>
+                                            <li>A father whose consent is not required due to the father’s mental limitations.</li>
+                                  </ol>
+                                 </p><br />
+                                  </div>
+                               </div>
+                          </div>
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse2b">
+                                      2. How is the father of the baby notified of the mother’s adoption plan?
+                                  </a>
+                              </div>
+                              <div id="collapse2b" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: Ultimately, Notice of Adoption Proceedings is served on him if he is entitled to notice. </p><br />
+                                  </div>
+                               </div>
+                          </div>
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse3b">
+                                      3. Can the father of the baby choose the adoptive parents?
+                                  </a>
+                              </div>
+                              <div id="collapse3b" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer:<br />
+                                      He can have such input as his marital status, interactions with the birth mother and affirmative actions to protect any parental rights might allow. Obviously, a father whose consent is required may have more influence in the selection of the adoptive parents than a father whose consent is not required.</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse4b">
+                                      4. What is the difference between a legal father and a named birth father?  How is the process of voluntary termination different for a legal father and a named birth father?
+                                  </a>
+                              </div>
+                              <div id="collapse4b" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer:<br />
+                                      A legal or presumptive father is the legal husband of a birth mother at the time of birth.  A named birth father is a person named by the birth mother as the genetic father of a child.</p>
+<p class="para">A presumptive father’s rights can be terminated by proving to the satisfaction of the Court that he is not the genetic father of the child or through the presumptive father’s consent or for any of the first ten reasons set forth in § 63-7-2570 (see question <a class="accordion-toggle" data-toggle="collapse" data-parent="#content_accordian" href="#collapse11b"># 11).</a> 
+</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse5b">
+                                      5. What happens if the mother does not know who the biological father is?
+                                  </a>
+                              </div>
+                              <div id="collapse5b" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer:<br />
+                                      The Court may allow “John Doe” publication, but note that if the father has not accepted responsibility for the child, a birth mother has the right to withhold the identity if the biological father. See Evans v. Department of Social Services, 399 SE2d 156 (1990).</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse6b">
+                                      6. What happens if the mother refuses to give the name of the biological father?
+                                  </a>
+                              </div>
+                              <div id="collapse6b" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer:<br />
+                                      If his consent is not required under S. C. Code Ann. §63-9-310 (Cum. Supp. 1992), then the mother can refuse to name him and a proper “John Doe” publication will be sufficient.  See Evans v. Department of Social Services, 399 SE2d 156 (1990).</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse7b">
+                                      7. Can the biological father of the baby give notice that he intends to plan for the baby before the baby is born?  What are the steps that a birth father must take if he intends to parent the child?
+                                  </a>
+                              </div>
+                              <div id="collapse7b" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer:<br />
+                                      Effective July 1, 2010, South Carolina’s Responsible Father Registry became operational. There is no cost to register, but only a registrant father may file a claim. The claim must be mailed in and must be filed before the date of a petition for termination of parental rights has been filed and before an adoption petition has been filed. A claim filed after these dates is void. The form must be signed by the registrant father. The registration form is available at the <a href="https://ssl.sc.gov/dssfatherregistry">Social Security Administration</a>.</p>
+<p class="para">A birth father who intends to parent the child should timely register with the South Carolina Responsible Father Registry and either live with the child’s mother for six months before the birth of the child and openly hold himself out as the father of the child during this six month period or pay a reasonable sum, based on his ability, for the support of the child or expenses related to the pregnancy or birth, including, but not limited to medical, hospital and nursing expenses. After the child is born, the birth father should maintain substantial and repeated contact with the child by paying support, visiting the child, or communicating with the child or person having lawful custody of the child.</p>
+</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse8b">
+                                      8. Can the birth father change his mind before signing the legal consents to the adoption?
+                                  </a>
+                              </div>
+                              <div id="collapse8b" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: Yes</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse9b">
+                                      9. Can a minor father independently sign legal documents placing the child for adoption (consent to the adoption)?
+                                  </a>
+                              </div>
+                              <div id="collapse9b" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: Yes</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse10b">
+                                      10. Can the birth father change his mind after signing the legal consents to the adoption?
+                                  </a>
+                              </div>
+                              <div id="collapse10b" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer:<br />
+                                      His consent cannot be withdrawn except by Court Order upon a showing of coercion or duress and that it would be in the best interest of the child.</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse11b">
+                                      11. Describe the process for doing an involuntary termination of a legal father’s or a named birth father’s rights.
+                                  </a>
+                              </div>
+                              <div id="collapse11b" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer:<br />
+                                      Parental rights may be involuntarily terminated upon a finding of one or more of the following grounds and a finding that the termination is in the best interest of the child: See § 63-7-2570  Termination of Parental Rights<br />
+                                                                        <ol id="numbered_list">
+                                        	<li>The child or another child in the home has been harmed as defined in Section 63-7-20, and because of the severity or repetition of the abuse or neglect, it is not reasonably likely that the home can be made safe within twelve months.  In determining the likelihood that the home can be made safe, the parent’s previous abuse or neglect of the child or another child in the home may be considered;</li>
+                                            <li>The child has been removed from the parent pursuant to Section 63-7-620 or Section 63-7-1660 has been out of the home for a period of six months following the adoption of a placement plan by court order or by agreement between the department and the parent, and the parent has not remedied the conditions which caused the removal;</li>
+                                            <li>The child has lived outside the home of either parent for a period of six months, during that time the parent has willfully failed to visit the child.  The court may attach little or no weight to incidental visitations, but it must be shown that the parent was not prevented from visiting by the party having custody or by court order.  The distance of the child’s placement from the parent’s home must be taken into consideration when determining the ability to visit;</li>
+                                            <li>The child has lived outside the home of either parent for a period of six months, and during that time the parent has willfully failed to support the child.  Failure to support means that the parent has failed to make a material contribution to the child’s welfare.  A material contribution consists of either financial contributions according to the parent’s means or contributions of food, clothing, shelter, or other necessities for the care of the child according to the parent’s means.  The court may consider all relevant circumstances in determining whether or not the parent has willfully failed to support the child, including requests for support by the custodian and the ability of the parent to provide support;</li>
+                                            <li>The presumptive legal father is not the biological father of the child, and the welfare of the child can best be served by termination of the parental rights of the presumptive legal father;</li>
+                                            <li>The parent has a diagnosable condition unlikely to change within a reasonable time including, but not limited to, alcohol or drug addiction, mental deficiency, mental illness, or extreme physical incapacity, and the condition makes the parent unlikely to provide minimally acceptable care of the child.  It is presumed that the parent’s condition is unlikely to change within a reasonable time upon proof that the parent has been required by the department or the family court to participate in a treatment program for alcohol or drug addiction, and the parent has failed two or more times to complete the program successfully or has refused at two or more separate meetings with the department to participate in a treatment program;</li>
+                                            <li>The child has been abandoned as defined in Section 63-7-20;</li>
+                                            <li>The child has been in foster care under the responsibility of the State for fifteen (15) of the most recent twenty-two (22) months; or</li>
+                                            <li>The physical abuse of a child of the parent resulted in the death or admission to the hospital for in-patient care of that child and the abuse is the act for which the parent has been convicted of or pled guilty or nolo contendere to committing, aiding, abetting, conspiring to commit, or soliciting an offense against the person as provided for in Title 16, Chapter 3, criminal domestic violence as defined in Section 16-25-20, criminal domestic violence of a high and aggravated nature as defined in Section 16-25-65, or the common law offense of assault and battery of a high and aggravated nature.</li>
+                                            <li>A parent of the child pleads guilty or nolo contendere to or is convicted of the murder of the child’s other parent.</li>
+                                            <li>Conception of a child as a result of the criminal sexual conduct of a biological parent, as found by a court of competent jurisdiction, is grounds for terminating the rights of that biological parent, unless the sentencing court makes specific findings on the record that the conviction resulted from consensual sexual conduct where neither the victim nor the actor were younger than fourteen (14) years of age nor older than eighteen (18) years of age at the time of the offense.</li>
+                                  </ol>
+                                      </p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse12b">
+                                      12. Describe the process for making a diligent effort to find the birth father if the birth mother knows the identity of the birth father but he cannot be located.
+                                  </a>
+                              </div>
+                              <div id="collapse12b" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer:<br />
+                                      An affidavit setting forth diligent efforts to locate a known birth father must accompany any complaint to allow service by publication.  The affidavit typically indicates that diligent inquiries have been made at the birth father’s last known address, last known place of employment, attempts made to contact him at all known phone numbers and through all known relatives.  Affidavits also often include language that common known databases have been searched to no avail.</p>
+<p class="para">The Responsible Father Registry took effect in July, 2010 The registry should be contacted as part of a diligent effort to find birth fathers. The Registry should be searched on the day the Complaint For Adoption is filed, but may be searched prior to the date of filing the Complaint for Adoption as well.
+</p><br />
+                                  </div>
+                               </div>
+                          </div>
+                       </div>
+                   </div>
+                   <div class="tab-pane" id="adoptive">
+                      <div class="accordion" id="content_accordian">
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse1c">
+                                      1. Who can be an adoptive parent and who selects them?
+                                  </a>
+                              </div>
+                              <div id="collapse1c" class="accordion-body in" style="height: auto;">
+                                  <div class="accordion-inner" id="main_content_whitea">
+                                  
+                                  <p class="para">Answer: <br />
+                                  Any South Carolina resident may petition to adopt a child.  Exceptions to the residency requirement are made for a special needs child, if there has been public notoriety concerning the child or child’s family, the child is placed with a relative, if at least one of the adoptive parents is in the military service stationed in South Carolina or if there are unusual or exceptional circumstances such that the best interests of the child would be served by the out of state placements.  See S. C. Code Ann. §63-9-750 (Cum. Supp. 1992).  In practice the “exceptional circumstances” requirement has generally been liberally and expansively interpreted by South Carolina family court judges such that the birth mother’s knowing selection of non-resident adoptive parents will generally be found to meet the “exceptional circumstances” requirement provided any birth mother expenses are reasonable and proper, i.e. there have been no improper incentives for the placement.</p><p class="para">
+South Carolina is a signatory to the Interstate Compact on The Place of Children.
+</p><br /><br />
+                                  </div>
+                               </div>
+                          </div>
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse2c">
+                                      2. What information about the birth parents and the child must be provided to the adoptive parents?
+                                  </a>
+                              </div>
+                              <div id="collapse2c" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      A medical history of the biological family of the adoptee, including parents, siblings and other family members related to the adoptee including ages, sex, race and any known genetic, psychological, metabolic, or familial disorders; and any medical or developmental history of the adoptee.  See S. C. Code Ann. §63-9-520(3) (Cum. Supp. 1992).</p><br />
+                                  </div>
+                               </div>
+                          </div>
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse3c">
+                                      3. What procedures are followed to ensure that adoptive parents are fit to adopt a child?
+                                  </a>
+                              </div>
+                              <div id="collapse3c" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      Adoptive parents must be investigated and approved by a person trained and certified by the Department of Social Services to do home studies.  Criminal histories, child abuse and sex abuse registries are checked.  A <em>guardian ad litem</em> is appointed to protect the interest of the child.  See S. C. Code Ann. §63-9-520 (Cum. Supp. 1992).</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse4c">
+                                      4. Can the potential adoptive parents have the child placed with them prior to the actual court procedures?
+                                  </a>
+                              </div>
+                              <div id="collapse4c" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: Yes</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse5c">
+                                      5. Can the adoptive parents prevent the birth parents from communicating with the child after the adoption?
+                                  </a>
+                              </div>
+                              <div id="collapse5c" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: Yes.</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse6c">
+                                      6. Under what circumstances can an adopted child communicate with the birth parents?
+                                  </a>
+                              </div>
+                              <div id="collapse6c" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      With the permission of the birth parents and adoptive parents if the child is a minor.  Court records are sealed and will generally not be opened.</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse7c">
+                                      7. What information must the birth parents provide to the adoptive parents?
+                                  </a>
+                              </div>
+                              <div id="collapse7c" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      A licensed social worker will obtain a medical/social history.  Often information may be sparse and is not subject to confirmation.</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse8c">
+                                      8. Who supervises the adoptive placement and for how long?
+                                  </a>
+                              </div>
+                              <div id="collapse8c" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      A post-placement report would be completed after the filing of the adoption petition.  A final hearing cannot be held before ninety days and no later than six months after the petition was filed.  See S. C. Code Ann. §63-9-750 (Cum. Supp. 1992).</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse9c">
+                                      9. When is the adoption final?
+                                  </a>
+                              </div>
+                              <div id="collapse9c" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      After the final decree of adoption is entered.  See S. C. Code Ann. §63-9-760 (Cum. Supp. 1992).</p><br />
+                                  </div>
+                               </div>
+                          </div>
+                       </div>
+                   </div>
+                   <div class="tab-pane" id="other">
+                      <div class="accordion" id="content_accordian">
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse1d">
+                                      1. Who initiates the adoption process?
+                                  </a>
+                              </div>
+                              <div id="collapse1d" class="accordion-body in" style="height: auto;">
+                                  <div class="accordion-inner" id="main_content_whitea">
+                                  
+                                  <p class="para">Answer: <br />
+                                  Typically the birth mother initiates the process of making a responsible adoption plan with the assistance of either a private adoption attorney or a licensed adoption agency.</p><br />
+                                  </div>
+                               </div>
+                          </div>
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse2d">
+                                      2. When are the legal adoption papers filed with the court?
+                                  </a>
+                              </div>
+                              <div id="collapse2d" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      The Complaint for Adoption is filed after the birthmother’s consent has been executed.  However, if the child is to be placed out of state, a Petition for a Finding of Special Circumstances allowing placement with a nonresident be filed before the birth of the child.</p>
+<p class="para"><u>Note:</u> The passage of the “Responsible Father Registry Statue” gives legal counsel representing the adoptive parents significant reasons to file the Complaint for Adoption as soon as possible after the placement as a delay in filing the Petition or Complaint will give any possible birth father an expanded window of time to register with the Responsible Father Registry.
+</p><br />
+                                  </div>
+                               </div>
+                          </div>
+                          <div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse3d">
+                                      3. Can the baby be placed for adoption without the consent of the birth mother and/or birth father?
+                                  </a>
+                              </div>
+                              <div id="collapse3d" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      The birth mother’s consent is always required if she is alive and her parental rights have not been judicially terminated.</p>
+                                       <p class="para">The birth father’s consent is required if he was married to the birth mother.  If the birth father was not married to the birth mother, his consent may or may not be required depending upon the age of the child at placement, whether or not the birth father lived with the child’s mother for a continuous period of six months immediately preceding the placement and openly held himself out to be the father of the child or paid a fair and reasonable sum based upon his financial ability for the support of the child or expenses incurred with the pregnancy or birth.</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse4d">
+                                      4. What happens if the birth parents do not agree on the adoption plan?
+                                  </a>
+                              </div>
+                              <div id="collapse4d" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      A.	If the birth father’s consent is required, he can preclude the adoption.  His consent will be required if he is married to the birth mother.  If he is not married to the birth mother, whether or not his consent is required will turn on the facts and how they are applied under §63-9-310 and the case of <u>Abernathy v. Baby Boy</u> - 437 SE 2d 25 (SC 1993).</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse5d">
+                                      5. Who can charge a fee for bringing birth parents and adoptive parents together?
+                                  </a>
+                              </div>
+                              <div id="collapse5d" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br / >
+                                      §63-9-310 addresses this issue.  It reads as follows:</p>
+                                       <p class="para">Under no circumstances may a child-placing agency or any person receive a fee, compensation, or any other thing of value as consideration for giving a consent or relinquishment of a child for the purpose of adoption and no child-placing agency or person may receive a child for payment of such fee, compensation, or any other thing of value.  However, costs may be assessed and payment made, subject to the court's approval, for the following: 
+                            <ol id="numbered_list">
+                                        	<li>Reimbursements for necessary, actual medical, and reasonable living expenses incurred by the mother and child for a reasonable period of time; </li>
+                                            <li>The fee for obtaining investigations and reports as required by section 63-9-520; </li>
+                                            <li>The fee of the individuals required to take the consent or relinquishment, as required by section 63-9-340(a); </li>
+                                            <li>The fee of a guardian ad litem appointed pursuant to section 63-9-720; </li>
+                                            <li>Reasonable attorney's fees and costs for actual services rendered; </li>
+                                            <li>Reasonable fees to child-placing agencies; and </li>
+                                            <li>Reasonable fees to sending agencies as defined in section 63-9-2200, the interstate compact on the placement of children.<br />The court may approve an adoption while not approving unreasonable fees and costs.</li>
+                                            
+                                  </ol>
+                                       </p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse6d">
+                                      6. Is the use of a non-licensed facilitator or non-licensed child-placing agencies, permitted to match adoptive families and birth families?
+                                  </a>
+                              </div>
+                              <div id="collapse6d" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      A.	No.  Any non-licensed facilitator or non-licensed child-placing agency that attempts to receive a fee to match adoptive families with birth families would likely run afoul of South Carolina Code Sections 16-3-1060 and 63-9-310.  Violating the provisions of these sections is a felony and carries sanctions of up to ten (10) years in prison and fines of up to $10,000.00 or both.</p>
+                                       <p class="para">Moreover, Section 63-9-70 precludes child-placing agencies not licensed in the State of South Carolina from advertising that the person or entity will place or accept a child for adoption and persons violating that section may be fined or imprisoned or both.</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse7d">
+                                      7. Are independent adoptions allowed?
+                                  </a>
+                              </div>
+                              <div id="collapse7d" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: Yes</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse8d">
+                                      8. How are independent and agency adoptions different?
+                                  </a>
+                              </div>
+                              <div id="collapse8d" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      Independent adoptions typically match adoptive families with a particular birth mother and the adoptive parents bear all of the costs and risks associated with a particular birth mother.</p>
+                                       <p class="para">Many agency adoptions proceed on a flat fee basis and allowable birth mother expenses for a particular birth mother are not passed through directly to the adoptive parents.</p><br />
+                                  </div>
+                               </div>
+                          </div><div class="accordion-group">
+                              <div class="accordion-heading" id="content_headings">
+                                  <a class="accordion-toggle" id="content_headings" data-toggle="collapse" data-parent="#content_accordian" href="#collapse9d">
+                                      9. How does an adoptee go about requesting access to their adoption file?
+                                  </a>
+                              </div>
+                              <div id="collapse9d" class="accordion-body collapse" style="height:0px;">
+                                  <div class="accordion-inner"  id="main_content_whitea">
+                                      
+                                      <p class="para">Answer: <br />
+                                      The file will be kept confidential except upon court order for good cause shown by order of the judge of the court in which the decree of adoption was entered. See § 63-9-780.</p>
+                                       <p class="para">The court will weigh the privacy rights of the natural parents against the interests of the adopted child to determine whether or not good cause has been shown.  A basic desire of the adoptee to know their identity has been found to be insufficient.  <u>Bradley v. Children’s Bureau of South Carolina</u>, 274 SE2d 418 (1981).  There must be a compelling reason for such information to be revealed.  <u>Gardner v. Baby Edwards</u>, 342 SE2d 601 (1986).</p><br />
+                                  </div>
+                               </div>
+                          </div>
+                       </div>
+                   </div>
                 </div>
             </div>
         </div>
+        <div class="span4">
+              <div class="contact_block" id="faq_contact">
+              	 <h3 class="contact_heading">Contact Us</h3>
+                  <p class="info">
+                  	<strong>Stephen Yacobi</strong><br />
+                    Attorney
+                  </p>
+                  <!-- contact infortmation block -->
+                  <address>
+                      408 N. Church Street<br />
+                      Greenville, SC 29601<br />
+                      Toll-Free: 1.800.293.8735<br />
+                      Phone: 864.242.3271<br />
+                      Fax: 864.233.3750<br />
+                      <a class="btn btn-primary btn-info btn-large" id="email_btn" href="mailto:lisa@yacobilawfirm.com" alt="Email Us"><i class="icon-envelope icon-white"></i>&nbsp;Email</a>
+                  </address>
+              </div>
+         </div>
       </div>
     </div>
 </div>
 <footer class="footer_bottom">
-	<div class="container-fluid" id="footer">
-    	<div class="row-fluid">
-    	<d1v class="span12" id="footer"> 
+	<div class="container" id="footer">
+    	<div class="row">
+    	<div class="span12" id="footer"> 
         	<!-- Footer area -->
             <div class="footer">
             	<h4 id="footer">Yacobi Law Firm</h4>
             	<strong id="footer">Copyright 2012</strong>
                 
             </div>
-        </d1v>
+        </div>
     </div>
     </div>
 </footer>

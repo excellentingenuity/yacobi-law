@@ -7,6 +7,7 @@ body {
 	background-image:url(../img/back4.jpg);
 	background-repeat:repeat-x;
 	height:100%;
+	text-align:center;
 	
 }
 #page {
@@ -67,7 +68,7 @@ body {
 }
 #slider3 {
 	margin-top:5px;
-	margin-left:5%;
+	
 	padding-top:3px;
 	padding-bottom:3px;
 	

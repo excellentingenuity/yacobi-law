@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image:url(../img/back4.jpg);
+	background-repeat:repeat-x;	
+}
+#page {
+	min-height:835px;	
+}
+.banner_logo {
+	max-height:220px;
+	width:100%;
+}
+#slider1{
+	margin-top:1em;
+	max-height:400px;
+	max-width:100%;
+	height:none;
+	
+}
+.slide_pic{
+	max-height:400px;
+	max-width:100%;
+	height:none;
+	border-radius:5px;	
+}
+#main_content_white {
+	color:#000;
+	text-align:left;
+	text-justify:inter-word;
+	text-wrap:normal;
+	background-color:#FFFFFF;
+	min-height:180px;
+	font-size:1.2em;
+}
+#right_thumb {
+	max-width:100%;	
+	max-height:160px;
+	margin-bottom:.5em;
+	margin-left:.5em;
+	border-color:#9B9D9C;
+}
+#left_thumb {
+	max-width:100%;	
+	max-height:160px;
+	margin-bottom:.5em;
+	margin-right:.5em;
+	border-color:#9B9D9C;
+}
+#right_thumb_horizontal {	
+	max-width:100%;
+	max-height:120px;
+	margin-left:.5em;
+	margin-bottom:.5em;
+	border-color:#9B9D9C;	
+}
+#left_thumb_horizontal {
+	max-width:100%;
+	max-height:120px;
+	margin-bottom:.5em;
+	margin-right:.5em;
+	border-color:#9B9D9C;
+}
+/*Brith Parents*/
+#static_content_contact {
+	margin-top:1em;
+}
+/*protfolio*/
+/*portfolio */
+#portfolios {
+	margin-left:1em;
+}
+.thumbnails > li {
+	margin-left:15px;
+}
+/*laws*/
+#laws_content {
+	margin-top:1em;
+}
+.download_block {
+	margin-top:1em;
+}
+/*FAQ*/
+#faq_contact {
+	margin-top:1em;
+}
+/*about*/
+#about_content {
+	margin-top:1em;
+}
+/*contact*/
+#gmap {
+	width:100%;
+	max-width:360px;
+	height:500px;	
+}

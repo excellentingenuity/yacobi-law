@@ -57,6 +57,8 @@ body {
 	padding-top:3px;
 	padding-bottom:3px;
 	
+	height:500px;
+	
 	
 }
 .slide_pic {
@@ -67,8 +69,7 @@ body {
 	border-bottom-left-radius:10px;
 	height:100%;
 	width:100%;
-	max-height:200px;
-	max-width:400px;
+
 	
 }
 .slides {
@@ -161,7 +162,7 @@ ul.tags_list {
 	font-size:16px;
 }
 #right_thumb {
-	width:15%;
+	width:25%;
 	height:80px;	
 	max-height:100px;
 	margin-left:5px;

@@ -11,8 +11,11 @@
 
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" >
 <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<link id="basecss" href="css/base.css" rel="stylesheet">
-<link href="css/laws.css" rel="stylesheet">
+<link rel="stylesheet" media="screen" href="css/phone.css">
+<link rel="stylesheet" media="screen and (min-width: 330px) and (max-width: 590px)" href="css/phone-hz.css"> 
+<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 800px)" href="css/tablet.css">
+<link rel="stylesheet" media="screen and (min-width: 801px) and (max-width: 1280px)" href="css/desktop.css">
+<link rel="stylesheet" media="screen and (min-width: 1280px)" href="css/widescreen.css">
 
 <link rel="icon" href="img/favicon.ico">
 <!--[if lt IE 9]>
@@ -23,24 +26,12 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="assets/js/jquery.js"></script>
   <script src="assets/js/bootstrap-transition.js"></script>
-  <script src="assets/js/bootstrap-alert.js"></script>
-  <script src="assets/js/bootstrap-modal.js"></script>
   <script src="assets/js/bootstrap-dropdown.js"></script>
-  <script src="assets/js/bootstrap-scrollspy.js"></script>
   <script src="assets/js/bootstrap-tab.js"></script>
-  <script src="assets/js/bootstrap-tooltip.js"></script>
-  <script src="assets/js/bootstrap-popover.js"></script>
   <script src="assets/js/bootstrap-button.js"></script>
   <script src="assets/js/bootstrap-collapse.js"></script>
-  <script src="assets/js/bootstrap-carousel.js"></script>
-  <script src="assets/js/bootstrap-typeahead.js"></script>
-  <script src="assets/js/detect.js"></script>
-  
-  
-<!--[if (gte IE 6)&(lte IE 8)]>
-  <script type="text/javascript" src="assets/js/selectivizr.js"></script>
-  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
-<![endif]-->  
+
+
 
 
 <!-- insert google analytics code here-->
@@ -52,20 +43,20 @@
 
 <div class="container-fluid" id="page">
 	<div class="row-fluid">
-    	<div class="span6">
+    	<div class="span4">
         	<div class="header_logo">
-            	<a href="http://www.scadoptlaw.com"><img class="banner_logo" src="img/logo6a.png" alt="Yacobi Law Firm Growing Families One Adoption at a time."></a>
+            	<a href="http://www.scadoptlaw.com"><img class="banner_logo" src="img/logo6a.png" alt="Yacobi Law Firm Grow-fluiding Families One Adoption at a time."></a>
             </div>
         </div>
-        <div class="span5 offset1">
+        <div class="span5 offset2">
         	<div class="tag_line">
             	<strong>Growing Families One Adoption at a Time.</strong>
             </div>
         </div>
     </div>
-    <div class="row">
-    	<div class="span10 offset2">
-        	<div class="nav" id="nav_menu">
+    <div class="row-fluid">
+    	<div class="span12">
+        	<div class="nav visible-desktop" id="nav_menu">
                 <ul class="nav nav-pills" id="top_nav">
                 	<li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>Home</a></li>
                     <li><a id="button_navs" href="birth.html">Birth Parents</a></li>
@@ -77,15 +68,39 @@
                     <li><a id="button_navs" href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
+            <div class="nav visible-tablet" id="nav_menu">
+                <ul class="nav nav-pills nav-stacked" id="top_nav">
+                	<li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>Home</a></li>
+                    <li><a id="button_navs" href="birth.html">Birth Parents</a></li>
+                    <li><a id="button_navs" href="adoptive.html">Adoptive Parents</a></li>
+                    <li><a id="button_navs" href="portfolios.html">Family Portfolios</a></li>
+                    <li class="active"><a id="button_navs_active" href="Laws.html">Adoption Laws</a></li>
+                    <li><a id="button_navs" href="FAQ.html">FAQ</a></li>
+                    <li><a id="button_navs" href="about.html">About Us</a></li>
+                    <li><a id="button_navs" href="contact.php">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav visible-phone" id="nav_menu">
+                <ul class="nav nav-pills nav-stacked" id="top_nav">
+                	<li><a id="button_navs" href="index.html"><i class="icon-home icon-white"></i>Home</a></li>
+                    <li><a id="button_navs" href="birth.html">Birth Parents</a></li>
+                    <li><a id="button_navs" href="adoptive.html">Adoptive Parents</a></li>
+                    <li><a id="button_navs" href="portfolios.html">Family Portfolios</a></li>
+                    <li class="active"><a id="button_navs_active" href="Laws.html">Adoption Laws</a></li>
+                    <li><a id="button_navs" href="FAQ.html">FAQ</a></li>
+                    <li><a id="button_navs" href="about.html">About Us</a></li>
+                    <li><a id="button_navs" href="contact.php">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </div>  
 <script type="text/javascript">
 $(".collapse").collapse();
 
 </script>
-     <div class="row">
-    	<div class="span8 offset2">
-        	<div class="main_content">
+     <div class="row-fluid">
+    	<div class="span8">
+        	<div class="main_content" id="laws_content">
             	<!-- main content area -->
                 <div class="accordion" id="content_accordian">
                 	<div class="accordion-group">
@@ -98,8 +113,8 @@ $(".collapse").collapse();
                         	<div class="accordion-inner" id="main_content_white">
                             <!--<img class="thumbnail pull-right" id="right_thumb_horizontal" src="img/small_baby.jpg" /> -->
                             <p class="para">The Code of Laws of South Carolina describes the adoption process in this state and covers many important procedural requirements and necessary safeguards to insure the protection of the adoptive couple, the biological parents, and most importantly, the child to be adopted.</p>
-		        <p class="para">The section on Domestic Relations establishes fair and reasonable procedures for the adoption of children and provides for the well-being of the adopted child, with full recognition of the interdependent needs and interests of the biological parents and the adoptive parents. However, when the interests of a child and an adult are in conflict, the conflict must be resolved in favor of the child. Children may be adopted by or placed for adoption with residents of South Carolina only, except in unusual or exceptional circumstances.</p>
-		        <p class="para">This section of the South Carolina code of law is quite extensive, and qualified legal counsel is advised for all parties involved in the adoption process. The Yacobi Law Firm can help both birth parents and adopting parents understand the full range of responsibilities involved in the adoption process, with the end result being a satisfying experience for everyone.</p>
+		        <p class="para">The code section on adoptions establishes fair and reasonable procedures for the adoption of children and provides for the well-being of the adopted child, with full recognition of the interdependent needs and interests of the biological parents and the adoptive parents. However, when the interests of a child and an adult are in conflict, the conflict must be resolved in favor of the child. Children may be adopted by or placed for adoption with residents of South Carolina only, except in unusual or exceptional circumstances.</p>
+		        <p class="para">This section of the South Carolina code is quite extensive, and qualified legal counsel is advised for all parties involved in the adoption process. The Yacobi Law Firm can help birth parents or adopting parents understand the full range of responsibilities involved in the adoption process, with the end result being a satisfying experience for everyone.</p>
                 </div>
                   </div>
                 	</div>
@@ -114,9 +129,9 @@ $(".collapse").collapse();
                             	<!-- <img class="thumbnail pull-left" id="left_thumb_horizontal" src="img/family_mix.jpg" /> -->
                             	<p class="para">
 				<ul class="laws_lists">
-					<li>Finding an Adoptable Baby</li>
-					<li>Investigation and Reports</li>
-					<li>Interstate Adoptions</li>
+					<li class="laws_lists">Finding an Adoptable Baby</li>
+					<li class="laws_lists">Investigation and Reports</li>
+					<li class="laws_lists">Interstate Adoptions</li>
 				</ul>
 			</p><br />
                             </div>
@@ -133,10 +148,10 @@ $(".collapse").collapse();
                             	<!-- <img class="thumbnail pull-right" id="right_thumb_horizontal" src="img/family_celebrate.jpg" /> -->
 			<p class="para">
 				<ul class="laws_lists">
-					<li>Contact with the Birth Mother</li>
-					<li>Consent by the Birth Mother</li>
-					<li>Withdrawal of Consent</li>
-					<li>Rights of Birth Fathers</li>
+					<li class="laws_lists">Contact with the Birth Mother</li>
+					<li class="laws_lists">Consent by the Birth Mother</li>
+					<li class="laws_lists">Withdrawal of Consent</li>
+					<li class="laws_lists">Rights of Birth Fathers</li>
 				</ul>
 			</p><br />
                             </div>
@@ -153,8 +168,8 @@ $(".collapse").collapse();
                             	<!-- <img class="thumbnail pull-right" id="right_thumb_horizontal" src="img/family_celebrate.jpg" /> -->
 			<p class="para">
 				<ul class="laws_lists">
-					<li>Temporary Custody, the Final Hearing, Appointment of  <em>Guardian ad Litem</em></li>
-					<li>New Name, Birth Certificates, and Confidentiality</li>
+					<li class="laws_lists">Temporary Custody, the Final Hearing, Appointment of  <em>Guardian ad Litem</em></li>
+					<li class="laws_lists">New Name, Birth Certificates, and Confidentiality</li>
 				</ul>
 			</p><br />
                             </div>
@@ -163,7 +178,7 @@ $(".collapse").collapse();
                 </div>
             </div>
         </div>
-        <div class="span3">
+        <div class="span4">
               <div class="download_block">
               	 <h3 class="download_heading">Download the Law</h3>
                   <p class="info">
@@ -181,16 +196,16 @@ $(".collapse").collapse();
     </div> -->
 </div>
 <footer class="footer_bottom">
-	<div class="container-fluid" id="footer">
-    	<div class="row-fluid">
-    	<d1v class="span12" id="footer"> 
+	<div class="container" id="footer">
+    	<div class="row">
+    	<div class="span12" id="footer"> 
         	<!-- Footer area -->
             <div class="footer">
             	<h4 id="footer">Yacobi Law Firm</h4>
             	<strong id="footer">Copyright 2012</strong>
                 
             </div>
-        </d1v>
+        </div>
     </div>
     </div>
 </footer>
